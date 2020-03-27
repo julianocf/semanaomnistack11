@@ -1,0 +1,63 @@
+Semana OmniStack
+
+DOCUMENTAR:
+  - instalação REACT
+  - configuração do ambiente
+  - criação do projeto
+  - instalação NPM
+  - instalação INSOMNIA
+  - instalação KNEX
+
+
+
+
+
+Configurando ambiente:
+- Chocolatey
+  -
+
+- no diretório raiz do projeto:
+  - CMD: npm init -y (y= yes to all)
+  - VSCode: npm install express
+Insomnia:
+  - ferramenta para debug  
+
+- Nodemon
+  npm install nodemon -D (-D dependência somente em desenvolvimento)
+  package.json: alterar scripts, adicionar:
+    "start": "nodemon index.js"
+  npm start
+
+Entidades: tudo aquilo que vai ser salvo no banco de dados
+  
+/**
+ * Métodos HTTP:
+ * GET: Buscar/Listar uma informação do back-end
+ * POST: Criar uma informação no back-end
+ * PUT: Alterar uma informação no back-end
+ * DELETE: Apagar uma informação no back-end
+ */
+
+/**
+ * Tipos de Parâmetros:
+ * Query: parâmetros nomeados enviados na rota após o símbolo de ? 
+ *   serve para: filtro, paginação
+ * Route: parâmetros utilizados para identificar recursos
+ *   app.get('/users/:id', (request, response) => {
+ * Request Body: Corpo da requisição, utilizado para criar ou alterar recursos
+    app.post('/users/', (request, response) => {
+        const params = request.body;
+        console.log(body);
+    })
+ */
+
+/**
+ * SQL: MySQL, SQLite, PostgreSQL, ...
+ * NoSQL: MongoDB, CouchDB, ...
+ */
+
+/**
+ * Driver: SELECT * FROM USERS
+ * Query Builder: table('users').select('*').where()
+ *   KNEX.JS 
+ */
